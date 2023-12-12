@@ -1,1 +1,1 @@
-# web_kurs
+# whatochka.github.io
