@@ -1,4 +1,4 @@
-import { closeModal, openModal, cross} from "./components/welcome.js";
+import { closeModal, openModal, cross} from "whatochka.github.io/components/welcome.js";
 
 const button = document.querySelector("#log");
 const modal = document.querySelector("#modalLogin");
