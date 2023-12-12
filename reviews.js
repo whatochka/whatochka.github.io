@@ -1,4 +1,4 @@
-import { closeModal, openModal, cross } from "components/welcome.js";
+import { closeModal, openModal, cross } from "./components/welcome.js";
 
 const button = document.querySelector("#log");
 const button1 = document.querySelector("#log1");

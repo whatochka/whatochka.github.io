@@ -1,7 +1,7 @@
-import { button, cross, orderForm, form, orderButton, openModal, closeModal } from "whatochka.github.io/components/welcome.js";
-import { logInButton, loginForm } from "whatochka.github.io/components/logIn.js";
-import { createContainer, galleryList } from "whatochka.github.io/components/gallery.js";
-import { initialElements } from "whatochka.github.io/utils/constants.js";
+import { button, cross, orderForm, form, orderButton, openModal, closeModal } from "./components/welcome.js";
+import { logInButton, loginForm } from "./components/logIn.js";
+import { createContainer, galleryList } from "./components/gallery.js";
+import { initialElements } from "./utils/constants.js";
 
 const forms = [orderForm, loginForm];
 const log = document.querySelector("#log");
