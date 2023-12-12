@@ -1,4 +1,3 @@
-exclude:
-  - "__*"
-  - "pages"
+keep_files:
   - "blocks"
+  - "pages"
