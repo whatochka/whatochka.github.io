@@ -1,8 +1,0 @@
-keep_files:
-  - "blocks"
-  - "pages"
-  - "header"
-  - "__*"
-  - "_*"
-  - "*__*"
-  - "*_*"
