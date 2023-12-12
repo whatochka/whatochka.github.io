@@ -1,0 +1,7 @@
+.welcome__button-container {
+  gap: 70px;
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  align-items: center;
+}

@@ -1,0 +1,12 @@
+.logo-container {
+  z-index: 100;
+}
+
+.header__logo {
+  height: 70px;
+  transition: all 2s ease;
+}
+
+.header__burger-container:hover .header__logo {
+  transform: rotate(360deg)
+}

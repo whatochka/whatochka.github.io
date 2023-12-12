@@ -1,0 +1,10 @@
+.advice__image-element {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  -webkit-box-shadow: 4px 4px 38px 4px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 4px 4px 38px 4px rgba(0, 0, 0, 0.23);
+  box-shadow: 4px 4px 38px 4px rgba(0, 0, 0, 0.23);
+}
+

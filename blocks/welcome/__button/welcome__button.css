@@ -1,0 +1,21 @@
+.welcome__button {
+  color: rgb(255, 255, 255);
+  z-index: 4;
+  width: 300px;
+  height: 100px;
+  border-radius: 15px;
+  font-size: 20px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 4px 0px 18px 17px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 4px 0px 18px 17px rgba(0, 0, 0, 0.15);
+  box-shadow: 4px 0px 18px 17px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+}
+
+.welcome__button:hover {
+  transform: scale(1.2);
+}

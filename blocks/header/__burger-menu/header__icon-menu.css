@@ -1,0 +1,9 @@
+.header__icon-menu {
+    height: 17px;
+}
+
+.icon-menu {
+    z-index: 100;
+    display: flex;
+    align-items: center;
+}

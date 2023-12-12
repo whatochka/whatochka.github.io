@@ -1,0 +1,29 @@
+.gallery__image {
+  width: 280px;
+  height: 280px;
+  position: relative;
+  object-fit: cover;
+  border-radius: 10%;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 964px) {
+  .gallery__image {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 589px) {
+  .gallery__image {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 409px) {
+  .gallery__image {
+    width: 220px;
+    height: 220px;
+  }
+}

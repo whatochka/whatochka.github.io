@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="vendor/normalize.css">
+  <link rel="stylesheet" href="./pages/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link type="image/x-icon" href="./images/logo.png" rel="icon">
+  <title>Садовый участок</title>
+</head>
+
+<body class="body">
+  <header class="header">
+    <div class="header__burger-container">
+      <div class="icon-menu">
+        <img class="header__icon-menu" src="./images/icon-menu.png" alt="icon-menu">
+      </div>
+      <div class="logo-container">
+        <img class="header__logo" src="./images/logo.png" alt="logo">
+      </div>
+      <div class="header__burger-menu">
+        <div><a href="/index.html">Главная</a></div>
+        <div><a href="#">Садовый гороскоп</a></div>
+        <div><a href="./advice.html">Советы</a></div>
+        <div><a href="#" id="log">Войти</a></div>
+      </div>
+    </div>
+    <div class="header__navigation">
+      <nav class="navigation-list">
+        <button id="main_btn" onclick="redirectToIndex()">Главная</button>
+        <button id="works_btn" onclick="redirectToIndex()">Наши работы</button>
+        <button id="reviews_btn" onclick="redirectToReviews()">Отзывы</button>
+        <button id="contacts_btn" onclick="redirectToContacts()">Контакты</button>
+      </nav>
+    </div>
+    <div class="header__login" id="log">
+      <button>Войти</button>
+    </div>
+  </header>
+  <main class="main">
+    <section class="advice">
+      <h2 class="subtitle advice__subtitle">Советы по уходу за участком</h2>
+      <ul class="advice__list">
+        <li class="advice__list-container">
+          <img src="./images/advice_poliv.jpg" alt="" class="advice__image-element">
+          <p class="advice__list-element">Организуйте систему полива.
+            Полив – это самый важный аспект ухода за дачным участком. Чтобы растения выглядели здоровыми и красивыми, им
+            необходимо достаточно влаги. Лучше всего организовать систему автоматического полива. В зависимости от
+            погодных условий и типа почвы, установите оптимальное время полива и длительность работы системы.</p>
+        </li>
+        <li class="advice__list-container">
+          <img src="./images/advice_obrez.jpg" alt="" class="advice__image-element">
+          <p class="advice__list-element">Не забывайте о своевременной обрезке.
+            Своевременная обрезка деревьев и кустарников – это не только красивый вид, но и условие здоровья зеленых
+            насаждений. Периодически удаляйте увядшие ветки, чтобы оставшиеся получили достаточно питательных веществ.
+            Также необходимо подстригать газоны, чтобы они не переросли и не превратились в заросли.</p>
+        </li>
+        <li class="advice__list-container">
+          <img src="./images/advice_list-sorn9k.jpg" alt="" class="advice__image-element">
+          <p class="advice__list-element">Убирайте опавшие листья и сорняки.
+            Опавшие листья и сорняки являются источником болезней для растений. Постоянно удаляйте их с участка, чтобы
+            избежать появления грибков и болезней. Сорняки могут также нанести значительный ущерб растительности,
+            поэтому необходимо проводить регулярное их удаление.</p>
+        </li>
+        <li class="advice__list-container">
+          <img src="./images/advice_vreditel.jpeg" alt="" class="advice__image-element">
+          <p class="advice__list-element">Защитите растения от вредителей.
+            На дачном участке всегда имеются вредители, поражающие растения. Не допускайте их развитие, заранее
+            предусмотрев защиту с помощью специальных средств. Можно также посадить растения, которые отталкивают
+            насекомых.</p>
+        </li>
+        <li class="advice__list-container">
+          <img src="./images/advice_clear-ychastok.jpg" alt="" class="advice__image-element">
+          <p class="advice__list-element">Оставляйте участок чистым и аккуратным.
+            Чистота и порядок на участке создают приятную атмосферу, привлекают гостей и способствуют релаксации.
+            Заставьте себя регулярно убирать мусор, вовремя проводить обработку почвы и удалять растительный мусор.</p>
+        </li>
+        <li class="advice__list-container">
+          <img src="./images/advice_verticuter.jpg" alt="" class="advice__image-element">
+          <p class="advice__list-element">Пользуйтесь вертикуттером и аэратором
+            Удаляйте мох и газонный войлок, чтобы обеспечить лучший доступ воды, воздуха и света к траве.
+            Пользуйтесь вертикуттером, когда почва еще влажная (весной и осенью).</p>
+        </li>
+        <li class="advice__list-container">
+          <img src="./images/advice_ydobrenie.jpg" alt="" class="advice__image-element">
+          <p class="advice__list-element">Удобряйте с умом.
+            Давайте вашему газону необходимое питание, но не переусердствуйте. Два-три раза в год (весна, пик сезона,
+            позднее лето) используйте удобрение долгосрочного действия.</p>
+        </li>
+        <li class="advice__list-container">
+          <img src="./images/advice_flowers.jpg" alt="" class="advice__image-element">
+          <p class="advice__list-element">Цветы и грядки.
+            С наступлением тепла можно снимать зимнюю «защиту» с многолетних растений, открывая их весеннему солнцу и
+            свежему воздуху. Избавьтесь от сорняков, взрыхлите почву, при необходимости обогатите ее удобрениями,
+            приготовьте все необходимое к посадке однолетних цветов и овощных культур.</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <div class="modal" id="modalLogin">
+    <form class="modal-form">
+      <img src="./images/icons8-cross-48.png" alt="крестик" class="modal-cross" id="loginCross">
+      <h2 class="modal-subtitle">Введите данные</h2>
+      <input type="email" name="loginEmail" class="modal-input" placeholder="Введите почту">
+      <input type="password" name="loginPassword" class="modal-input" placeholder="Введите пароль">
+      <button class="modal-button" type="submit">Войти</button>
+      <p>У вас нет аккаунта? <a href="registration.html">Зарегестироваться</a></p>
+    </form>
+  </div>
+  <script type="module" src="./advice.js"></script>
+  <script src="./components/scroll.js"></script>
+  <script src="./components/scroll_header.js"></script>
+</body>
+
+</html>

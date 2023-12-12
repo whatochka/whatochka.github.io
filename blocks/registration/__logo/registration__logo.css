@@ -1,0 +1,18 @@
+.registration__logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 70px;
+}
+
+.registration__form div a:hover .registration__logo {
+  transform: rotate(360deg);
+}
+
+@media screen and (max-width: 501px) {
+  .registration__logo {
+    height: 40px;
+    top: 25px;
+  }
+}
+

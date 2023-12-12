@@ -1,0 +1,9 @@
+.advice__list {
+  display: flex;
+  margin-top: 100px;
+  flex-direction: column;
+  column-gap: 100px;
+  padding: 0;
+  gap: 75px;
+  margin-bottom: 100px;
+}

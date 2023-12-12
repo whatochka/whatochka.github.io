@@ -1,0 +1,12 @@
+.header__burger-container {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  padding-left: 70px;
+  gap: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .header__burger-container {
+    padding-left: 40vw;
+  }
+}

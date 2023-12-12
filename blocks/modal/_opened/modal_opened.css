@@ -1,0 +1,6 @@
+.modal_opened {
+  z-index: 5;
+  opacity: 1;
+  transition: 0s, 0.3s linear;
+  visibility: visible;
+}

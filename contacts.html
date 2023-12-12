@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vendor/normalize.css">
+    <link rel="stylesheet" href="./pages/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link type="image/x-icon" href="./images/logo.png" rel="icon">
+    <title>Садовый участок</title>
+</head>
+
+<body class="body">
+    <header class="header">
+        <div class="header__burger-container">
+            <div class="icon-menu">
+                <img class="header__icon-menu" src="./images/icon-menu.png" alt="icon-menu">
+            </div>
+            <div class="logo-container">
+                <img class="header__logo" src="./images/logo.png" alt="logo">
+            </div>
+            <div class="header__burger-menu">
+                <div><a href="/index.html">Главная</a></div>
+                <div><a href="#">Садовый гороскоп</a></div>
+                <div><a href="./advice.html">Советы</a></div>
+                <div><a href="#" id="log">Войти</a></div>
+            </div>
+        </div>
+        <div class="header__navigation">
+            <nav class="navigation-list">
+                <button id="main_btn" onclick="redirectToIndex()">Главная</button>
+                <button id="works_btn" onclick="redirectToIndex()">Наши работы</button>
+                <button id="reviews_btn" onclick="redirectToReviews()">Отзывы</button>
+                <button id="contacts_btn" onclick="redirectToContacts()">Контакты</button>
+            </nav>
+        </div>
+        <div class="header__login" id="log1">
+            <button>Войти</button>
+        </div>
+    </header>
+    <main>
+        <div class="contacts_container">
+            <div class="text_container">
+                <h1>Наши контакты</h1>
+                <p>Загляните на чашечку кофе или оставьте нам сообщение:</p>
+            </div>
+            <div class="contacts_row">
+                <div class="contacts_column">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d312.3070966393035!2d37.667777378903686!3d55.73059901173171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54ada2598bca3%3A0x9c3624c3ccc91046!2zMS3RjyDQlNGD0LHRgNC-0LLRgdC60LDRjyDRg9C7Liwg0JzQvtGB0LrQstCwLCAxMDkwNDQ!5e0!3m2!1sru!2sru!4v1702238822889!5m2!1sru!2sru"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <form class="contacts_form">
+                        <label for="fname">Имя</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Ваше имя...">
+                        <label for="lname">Фамилия</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Ваша фамилия...">
+                        <label for="country">Страна</label>
+                        <select id="country" name="country">
+                            <option value="russia">Россия</option>
+                            <option value="belorusia">Белорусия</option>
+                            <option value="china">Китай</option>
+                        </select>
+                        <label for="subject">Сообщение</label>
+                        <textarea id="subject" name="subject" placeholder="Напишите что-нибудь..."></textarea>
+                        <button type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="modal" id="modalLogin">
+        <form class="modal-form">
+            <img src="./images/icons8-cross-48.png" alt="крестик" class="modal-cross" id="loginCross">
+            <h2 class="modal-subtitle">Введите данные</h2>
+            <input type="email" name="loginEmail" class="modal-input" placeholder="Введите почту">
+            <input type="password" name="loginPassword" class="modal-input" placeholder="Введите пароль">
+            <button class="modal-button" type="submit">Войти</button>
+            <p>У вас нет аккаунта? <a href="registration.html">Зарегестироваться</a></p>
+        </form>
+    </div>
+    <script type="module" src="./contacts.js"></script>
+    <script src="./components/scroll.js"></script>
+    <script src="./components/scroll_header.js"></script>
+</body>
+
+</html>

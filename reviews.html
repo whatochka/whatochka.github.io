@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vendor/normalize.css">
+    <link rel="stylesheet" href="./pages/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link type="image/x-icon" href="./images/logo.png" rel="icon">
+    <title>Садовый участок</title>
+</head>
+
+<body class="body">
+    <header class="header">
+        <div class="header__burger-container">
+            <div class="icon-menu">
+                <img class="header__icon-menu" src="./images/icon-menu.png" alt="icon-menu">
+            </div>
+            <div class="logo-container">
+                <img class="header__logo" src="./images/logo.png" alt="logo">
+            </div>
+            <div class="header__burger-menu">
+                <div><a href="/index.html">Главная</a></div>
+                <div><a href="#">Садовый гороскоп</a></div>
+                <div><a href="./advice.html">Советы</a></div>
+                <div><a href="#" id="log">Войти</a></div>
+            </div>
+        </div>
+        <div class="header__navigation">
+            <nav class="navigation-list">
+                <button id="main_btn" onclick="redirectToIndex()">Главная</button>
+                <button id="works_btn" onclick="redirectToIndex()">Наши работы</button>
+                <button id="reviews_btn" onclick="redirectToReviews()">Отзывы</button>
+                <button id="contacts_btn" onclick="redirectToContacts()">Контакты</button>
+            </nav>
+        </div>
+        <div class="header__login" id="log1">
+            <button>Войти</button>
+        </div>
+    </header>
+    <main class="main">
+        <div class="reviews__container">
+            <div class="cards-container">
+                <h1>Отзывы</h1>
+                <div class="line"></div>
+                <div class="cards">
+                    <div class="card">
+                        <div class="content">
+                            <img src="http://zornet.ru/_fr/83/7890600.jpg" alt="">
+                            <div class="name">Антон Попов</div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+
+                            <p>Работают быстро, делают красиво. Ставлю 5 заслуженных звезд!</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="content">
+                            <img src="http://zornet.ru/_fr/83/2047084.jpg" alt="">
+                            <div class="name">Дмитрий Атрохов</div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+
+                            <p>Приехали и разбили вазу... Но быстро заменили ее на новую такую же. Сложилось очень смешанное мнение о вашей компании.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="content">
+                            <img src="http://zornet.ru/_fr/83/5640570.jpg" alt="">
+                            <div class="name">Каспер Волков</div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <p>Придраться не к чему, очень хорошая работа, но могли красивее посадить цветы. За это -1 звезда.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="modal" id="modalLogin">
+        <form class="modal-form">
+            <img src="./images/icons8-cross-48.png" alt="крестик" class="modal-cross" id="loginCross">
+            <h2 class="modal-subtitle">Введите данные</h2>
+            <input type="email" name="loginEmail" class="modal-input" placeholder="Введите почту">
+            <input type="password" name="loginPassword" class="modal-input" placeholder="Введите пароль">
+            <button class="modal-button" type="submit">Войти</button>
+            <p>У вас нет аккаунта? <a href="registration.html">Зарегестироваться</a></p>
+        </form>
+    </div>
+    <script type="module" src="./reviews.js"></script>
+    <script src="./components/scroll.js"></script>
+    <script src="./components/scroll_header.js"></script>
+</body>
+
+</html>

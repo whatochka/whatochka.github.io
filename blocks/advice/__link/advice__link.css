@@ -1,0 +1,9 @@
+.advice__link {
+  color: black;
+  opacity: 0.5;
+  transition: all 0.2s ease;
+}
+
+.advice__link:hover {
+  opacity: 1;
+}

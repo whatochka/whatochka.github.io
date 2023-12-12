@@ -1,0 +1,141 @@
+.contacts_column form input[type="text"],
+select,
+textarea {
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  background-color: rgba(245, 222, 179, 0);
+  display: block;
+  font-size: 14px;
+  line-height: 17px;
+  min-width: 358px;
+  height: 30px;
+  outline: none;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.contacts_container div h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.contacts_container {
+  /* background-color: #000000; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts_container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../../images/background_info.jpg");
+  z-index: -2;
+}
+
+.contacts_container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: -1;
+}
+
+.contacts_form {
+  position: relative;
+  display: grid;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 25px;
+  grid-template-rows: repeat(8, 1fr);
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+}
+
+iframe {
+  border-radius: 25px;
+}
+
+.contacts_column {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 0 70px;
+  justify-items: center;
+}
+
+.contacts_form label {
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+
+.contacts_row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text_container {
+  margin: 0 0 70px 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .contacts_column,
+  button {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 1189px) {
+  .contacts_column {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 50px;
+  }
+  .contacts_container::before {
+    height: 200%;
+  }
+
+  .contacts_container::after {
+    height: 200%;
+  }
+  .text_container {
+    margin: 700px 0 50px 0;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .contacts_column {
+    padding: 0;
+  }
+  iframe {
+    width: 80vw;
+  }
+  .contacts_form {
+    width: 80vw;
+  }
+  button {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 444px) {
+  .contacts_column form input[type="text"],
+  select,
+  textarea {
+    min-width: 100px;
+    max-width: 358px;
+  }
+}

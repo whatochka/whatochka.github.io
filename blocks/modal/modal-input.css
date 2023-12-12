@@ -1,0 +1,54 @@
+.modal-input {
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  background-color: rgba(245, 222, 179, 0);
+  display: block;
+  font-size: 14px;
+  line-height: 17px;
+  min-width: 358px;
+  height: 30px;
+  outline: none;
+  font-size: 15px;
+  margin: 100px 50px;
+  transition: all 0.3s ease;
+}
+
+.modal-input:first-of-type {
+  margin: 70px 50px 20px 50px;
+}
+
+.modal-input:last-of-type {
+  margin: 20px 50px 80px 50px;
+}
+
+.modal-input:focus {
+  border-bottom: 2px solid black;
+}
+
+@media screen and (max-width: 540px) {
+  .modal-input {
+    min-width: 250px;
+    margin: 100px 0;
+  }
+  .modal-input:first-of-type {
+    margin: 50px 20px 20px 20px;
+  }
+
+  .modal-input:last-of-type {
+    margin: 20px 20px 50px 20px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .modal-input {
+    min-width: 200px;
+    margin: 100px 0;
+  }
+  .modal-input:first-of-type {
+    margin: 30px 10px 20px 10px;
+  }
+
+  .modal-input:last-of-type {
+    margin: 20px 10px 40px 10px;
+  }
+}

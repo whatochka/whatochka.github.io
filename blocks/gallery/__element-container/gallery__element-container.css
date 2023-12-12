@@ -1,0 +1,21 @@
+.gallery__element-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+
+}
+
+.gallery__element-container:hover {
+  transform: scale(1.05);
+  position: relative;
+}
+
+.gallery__element-container:hover .gallery__image {
+  -webkit-box-shadow: 1px 15px 27px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 15px 27px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 15px 27px 5px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,14 @@
+.registration__form div h1 {
+    color: black;
+}
+
+.registration__form label {
+    color: #000;
+}
+
+@media screen and (max-width: 501px) {
+    .registration__form div h1 {
+        font-size: 20px;
+    }
+  }
+  

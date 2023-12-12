@@ -1,0 +1,10 @@
+.footer {
+  background-color: rgb(0, 0, 0, 0.9);
+  padding: 20px 70px;
+  -webkit-box-shadow: 0px -17px 20px 5px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0px -17px 20px 5px rgba(0, 0, 0, 0.22);
+  box-shadow: 0px -17px 20px 5px rgba(0, 0, 0, 0.22);
+}
+i {
+  margin-top: 6px;
+}

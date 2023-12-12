@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="vendor/normalize.css">
+  <link rel="stylesheet" href="./pages/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link type="image/x-icon" href="./images/logo.png" rel="icon">
+  <title>Садовый участок</title>
+</head>
+
+<body class="body">
+  <header class="header">
+    <div class="header__burger-container">
+      <div class="icon-menu">
+        <img class="header__icon-menu" src="./images/icon-menu.png" alt="icon-menu">
+      </div>
+      <div class="logo-container">
+        <img class="header__logo" src="./images/logo.png" alt="logo">
+      </div>
+      <div class="header__burger-menu">
+        <div><a href="/index.html">Главная</a></div>
+        <div><a href="#">Садовый гороскоп</a></div>
+        <div><a href="./advice.html">Советы</a></div>
+        <div><a href="#" id="log">Войти</a></div>
+      </div>
+    </div>
+    <div class="header__navigation">
+      <nav class="navigation-list">
+        <button id="main_btn">Главная</button>
+        <button id="works_btn">Наши работы</button>
+        <button id="reviews_btn" onclick="redirectToReviews()">Отзывы</button>
+        <button id="contacts_btn" onclick="redirectToContacts()">Контакты</button>
+      </nav>
+    </div>
+    <div class="header__login">
+      <button>Войти</button>
+    </div>
+  </header>
+  <main class="main">
+    <section class="welcome" id="main">
+      <div class="welcome__container">
+        <h2 class="welcome__subtitle">Садовый участок</h2>
+        <div class="welcome__button-container">
+          <a>
+            <button class="welcome__button like">
+              Заказать участок
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="gallery" id="gallery">
+      <h2 class="subtitle">Наши работы</h2>
+      <div class="gallery__list">
+        <template id="element">
+          <div class="gallery__element-container">
+            <p class="gallery__element-text"></p>
+            <img src="#" alt="" class="gallery__image">
+          </div>
+        </template>
+      </div>
+    </section>
+    <section class="info">
+      <h2 class="subtitle info__subtitle">
+        Информация о нас
+      </h2>
+      <p class="info__text">
+        Добро пожаловать на сайт "Садовый Участок" – вашего надежного партнера в создании и поддержке живописных садов и
+        огородов! Мы – это онлайн-платформа, посвященная всему, что касается заботы о вашем зеленом уголке.
+      </p>
+      <ul>
+        <li class="info__text_list"><b>Растения и Семена</b>: Мы предлагаем широкий выбор высококачественных семян и
+          растений,
+          подходящих для различных климатических условий. От овощей и цветов до декоративных кустарников – у нас есть
+          все для создания уникального сада.</li>
+        <li class="info__text_list"><b>Садовые Инструменты и Оборудование</b>: Наши товары для садоводства – это не
+          только
+          инструменты, но и технологические новинки, упрощающие уход за растениями. Вы найдете у нас все необходимое для
+          удобной и эффективной работы в саду.</li>
+        <li class="info__text_list"><b>Декор и Мебель для Сада</b>: Превратите свой участок в уютное пространство с
+          нашим
+          ассортиментом декора и мебели. Стулья, лавочки, фонари и даже фонтаны – у нас есть всё, чтобы сделать ваш сад
+          ещё привлекательнее.</li>
+        <li class="info__text_list"><b>Советы и Идеи</b>: На "Садовом Участке" мы не только предоставляем продукты, но и
+          делимся с вами полезными советами и творческими идеями. В наших блогах и статьях вы найдете советы по уходу за
+          растениями, ландшафтному дизайну и многому другому.</li>
+      </ul>
+      <p class="info__text">
+        Почему выбирают именно нас:
+      </p>
+      <ul>
+        <li class="info__text_list"><i>Качество</i>: Мы тщательно отбираем продукты, чтобы предоставить вам только
+          лучшее.</li>
+        <li class="info__text_list"><i>Удобство</i>: Онлайн-платформа "Садовый Участок" доступна 24/7, позволяя вам выбирать и
+          покупать продукты в любое удобное время.</li>
+        <li class="info__text_list"><i>Экспертиза</i>: Наши эксперты готовы поделиться своим опытом и знаниями, чтобы сделать
+          ваш сад процветающим и красочным.</li>
+      </ul>
+      <p class="info__text">
+        Создайте свой идеальный сад вместе с "Садовым Участком" – местом, где растет красота и процветание!
+      </p>
+    </section>
+    <section class="advice__main">
+      <h2 class="subtitle advice__subtitle" style="color: black;">Советы по уходу за участком</h2>
+      <ul class="advice__list">
+        <li class="advice__list-container">
+          <img src="./images/advice_poliv.jpg" alt="" class="advice__image-element">
+          <p class="advice__list-element" style="color: black">Организуйте систему полива.
+            Полив – это самый важный аспект ухода за дачным участком. Чтобы растения выглядели здоровыми и красивыми, им
+            необходимо достаточно влаги. Лучше всего организовать систему автоматического полива. В зависимости от
+            погодных условий и типа почвы, установите оптимальное время полива и длительность работы системы.</p>
+        </li>
+        <li class="advice__list-container">
+          <img src="./images/advice_obrez.jpg" alt="" class="advice__image-element">
+          <p class="advice__list-element" style="color: black">Не забывайте о своевременной обрезке.
+            Своевременная обрезка деревьев и кустарников – это не только красивый вид, но и условие здоровья зеленых
+            насаждений. Периодически удаляйте увядшие ветки, чтобы оставшиеся получили достаточно питательных веществ.
+            Также необходимо подстригать газоны, чтобы они не переросли и не превратились в заросли.</p>
+        </li>
+        <li class="advice__list-container">
+          <img src="./images/advice_list-sorn9k.jpg" alt="" class="advice__image-element">
+          <p class="advice__list-element" style="color: black">Убирайте опавшие листья и сорняки.
+            Опавшие листья и сорняки являются источником болезней для... <a href="./advice.html" class="advice__link">
+              советы</a></p>
+
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__footer-row">
+      <div class="footer__footer-col">
+        <h4>Контакты</h4>
+        <p class="adress">
+          г. Москва, пр. Вернадского, д. 78
+        </p>
+        <p class="phone-number">
+          + 7 (777) 777-77-77
+        </p>
+        <p class="mail">
+          garden_plot@mail.ru
+        </p>
+      </div>
+      <div class="footer__footer-col">
+        <h4>О сайте</h4>
+        <p>
+          Наш сайт поможет вам обустроить ваш участок.
+          Отавьте заявку и мы максимально быстро ответим на все ваши вопросы.
+        </p>
+      </div>
+      <div class="footer__footer-col">
+        <h4>Быстрые ссылки</h4>
+        <ul>
+          <li><a href="#main" class="scroll-link">Главная</a></li>
+          <li><a href="#gallery" class="scroll-link">Наши работы</a></li>
+          <li><a href="reviews.html">Отзывы</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="advice.html">Советы</a></li>
+        </ul>
+      </div>
+      <div class="footer__footer-col">
+        <h4>Соцсети</h4>
+        <p>Подпишитесь на рассылку, чтобы не пропустить ничего интересного</p>
+        <div class="footer__social-links">
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-vk"></i></a>
+        </div>
+        <div class="footer__subscribe">
+          <input placeholder="Ваш E-mail">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="footer__subfooter">© 2023 Brechko Maksim. All Right Reserved.</div>
+  <div class="modal" id="modalOrder">
+    <form class="modal-form">
+      <img src="./images/icons8-cross-48.png" alt="крестик" class="modal-cross" id="orderCross">
+      <h2 class="modal-subtitle">Заполните данные</h2>
+      <input type="tel" name="orderTelephone" class="modal-input" placeholder="Номер телефона">
+      <input type="text" name="orderName" class="modal-input" placeholder="ФИО">
+      <button class="modal-button" type="submit">Отправить</button>
+    </form>
+  </div>
+  <div class="modal" id="modalLogin">
+    <form class="modal-form">
+      <img src="./images/icons8-cross-48.png" alt="крестик" class="modal-cross" id="loginCross">
+      <h2 class="modal-subtitle">Введите данные</h2>
+      <input type="email" name="loginEmail" class="modal-input" placeholder="Введите почту">
+      <input type="password" name="loginPassword" class="modal-input" placeholder="Введите пароль">
+      <button class="modal-button" type="submit">Войти</button>
+      <p>У вас нет аккаунта? <a href="registration.html">Зарегестироваться</a></p>
+    </form>
+  </div>
+  <script type="module" src="./index.js"></script>
+  <script src="./components/scroll.js"></script>
+  <script src="./components/scroll_header.js"></script>
+</body>
+
+</html>

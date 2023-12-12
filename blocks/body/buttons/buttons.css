@@ -1,0 +1,21 @@
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+@media screen and (max-width: 500px) {
+
+    button {
+      width: 80vw;
+    }
+  }
+  

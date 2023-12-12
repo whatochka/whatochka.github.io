@@ -1,0 +1,41 @@
+.advice__list-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+}
+
+.advice__list-container:nth-of-type(2) {
+  align-self: end;
+}
+.advice__list-container:nth-of-type(4) {
+  align-self: end;
+}
+.advice__list-container:nth-of-type(6) {
+  align-self: end;
+}
+.advice__list-container:nth-of-type(8) {
+  align-self: end;
+}
+
+@media screen and (max-width: 1200px) {
+  .advice__list-container:nth-of-type(2) {
+    align-self: center;
+  }
+  .advice__list-container:nth-of-type(4) {
+    align-self: center;
+  }
+  .advice__list-container:nth-of-type(6) {
+    align-self: center;
+  }
+  .advice__list-container:nth-of-type(8) {
+    align-self: center;
+  }
+  .advice__list-container {
+    align-self: center;
+    max-width: fit-content;
+    flex-direction: column;
+  }
+}

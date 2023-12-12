@@ -1,0 +1,11 @@
+.gallery__element-text {
+
+  transition: all .3s ease;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.gallery__image:hover .gallery__element-text {
+  color: black;
+  font-size: 20px;
+}

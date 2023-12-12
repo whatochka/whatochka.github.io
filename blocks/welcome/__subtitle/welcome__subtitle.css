@@ -1,0 +1,13 @@
+.welcome__subtitle {
+  color: rgb(255, 255, 255);
+  font-size: 70px;
+  z-index: 3;
+  margin: 100px 0 0 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  .welcome__subtitle {
+    font-size: 50px;
+  }
+}
