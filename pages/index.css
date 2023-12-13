@@ -5,6 +5,7 @@
 @import url(../blocks/header/__burger-menu/header__burger-menu.css);
 @import url(../blocks/header/__burger-menu/header__icon-menu.css);
 @import url(../blocks/header/__burger-menu/header__burger-container.css);
+@import url(../blocks/header/__checkbox/header__checkbox.css);
 
 @import url(../blocks/registration/registration.css);
 @import url(../blocks/registration/__form/registration__form.css);
