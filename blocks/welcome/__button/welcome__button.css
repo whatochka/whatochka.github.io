@@ -19,3 +19,10 @@
 .welcome__button:hover {
   transform: scale(1.2);
 }
+
+@media screen and (max-width: 700px) {
+  .welcome__button {
+    width: 250px;
+    height: 70px;
+  }
+}

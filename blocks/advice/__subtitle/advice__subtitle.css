@@ -5,3 +5,9 @@
   margin-top: 100px;
   text-align: center;
 }
+
+@media screen and (max-width: 650px) {
+  .advice__subtitle {
+    font-size: 2rem
+  }
+}
