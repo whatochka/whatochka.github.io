@@ -15,15 +15,10 @@
     transition: all 0.2s ease;
   }
 
-  .header__checkbox:checked {
-    transition: all 0.2s ease;
-  }
-
   .header__checkbox:checked ~ .header__burger-menu {
     opacity: 1;
     visibility: visible; 
   }
-
 }
 
 @media screen and (max-width: 696px) {
