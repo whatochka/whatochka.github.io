@@ -2,7 +2,7 @@
   visibility: hidden;
   position: fixed;
   display: grid;
-  grid-template-rows: 70px repeat(4, 1fr);
+  grid-template-rows: 70px repeat(3, 1fr);
   left: 30px;
   width: 210px;
   height: 300px;
